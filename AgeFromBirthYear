@@ -1,0 +1,19 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*; 
+ class Main                                    //class name of you choose
+{
+	public static void main (String[] args)      
+	{                                             
+		Date today = new Date();                    //date from date function
+          Calendar cal =  Calendar.getInstance();    //getting calendar instance
+           cal.setTime(today);                 
+             int year = cal.get(Calendar.YEAR);     //getting year from calendar
+             System.out.println("Enter the birth year");
+             Scanner in=new Scanner(System.in);
+             int birthYear=in.nextInt();
+             System.out.println(year-birthYear);       //age calculation from today date to birth year
+	}
+}
+
