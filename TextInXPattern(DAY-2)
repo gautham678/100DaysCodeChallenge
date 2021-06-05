@@ -1,0 +1,42 @@
+
+/**
+ *
+ * @author Gautham
+ */
+import java.lang.Math;
+import java.util.Scanner;
+public class Task1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+     String s;
+     Scanner in=new Scanner(System.in);
+     s=in.next();
+     char a[]=s.toCharArray();
+     int start=0,end=a.length-1;
+     for(int i=0;i<a.length;i++)
+     {
+         for(int j=0;j<a.length;j++)
+         {
+             if(j==start||j==end)
+             {
+                 System.out.print(a[j]+" ");
+             }
+             else
+             {
+                  System.out.print(" "); 
+             }
+          
+         }
+            start++;
+             end--;
+             System.out.println();
+         
+     }
+    }
+   }
+
