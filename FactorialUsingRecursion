@@ -1,0 +1,24 @@
+/**
+ *
+ * @author Gautham
+ */
+public class Wings {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static int func(int a)
+    {
+        if(a>0)
+        return a*func(a-1);
+        else
+            return 1;
+    }
+    public static void main(String[] args) {
+        int n;
+        Scanner in=new Scanner(System.in);
+        n=in.nextInt();
+       System.out.println( func(n));
+    }
+    
+}
