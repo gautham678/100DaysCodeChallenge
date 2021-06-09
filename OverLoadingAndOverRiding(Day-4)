@@ -1,0 +1,30 @@
+class sample      //overloading concept
+{
+    void func(int a,int b)
+    {
+        System.out.println("Addition of int:"+(a+b));
+    }
+    void func(float a,float b)
+    {
+        System.out.println("Addition of float:"+(a+b));
+    }
+}
+class sample1 extends sample{   //overriding concept
+    void func(int a,int b)
+    {  
+        System.out.println(a+b);
+    }
+}
+public class Task3  {
+    public static void main(String[] args) {
+       
+        sample s=new sample();
+        System.out.println("Addition by method overloading concept");
+        s.func(1,5);
+        s.func((float) 1.5,(float)3.6);
+         System.out.println("Addition by method overriding concept");
+         sample s1=new sample1();
+         s1.func(3, 5);
+    }
+    
+}
